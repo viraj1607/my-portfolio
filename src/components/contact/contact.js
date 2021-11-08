@@ -6,15 +6,37 @@ import './contact.css'
 
 
 class Contact extends Component{
-    render(){
-        const popup=(e)=>{
-            e.preventDefault()
+    state={
+        name:"",
+        number:"",
+        email:"",
+    }
+
+    popup=()=>{
         swal({
             title: "Thank You !", 
             icon: "success",
             button: "Back",
           })
         }
+
+    handleChange=(e)=>{
+        this.setState({[e.target.id]:e.target.value})
+    }
+
+    handleForm=(e)=>{
+        e.preventDefault();
+        this.setState({name:"",number:"",email:""})
+        this.popup();
+    }
+
+    
+
+    render(){
+        
+
+        const disable=this.state.name.length<1 || this.state.number.length<1 || this.state.email.length<1;
+        console.log(this.state)
         return(
             <div className="contact-main-container" id="contact">
                 <h2>Contact Me</h2>
@@ -22,7 +44,7 @@ class Contact extends Component{
                 <div className="contact-flex-container">
                     <div className="info-contact-container">
                         <h3>Let's Connect</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta…</p>
+                        <p>Got any suitable jobs where I can contribute? <br/>You can find me here !</p>
                         <div className="flex align-items"><AiOutlineMail style={{margin:"10px", color:"#858585", fontSize:"24px"}}/><text>merai.viraj@gmail.com</text>
                         </div>
                         <br/>
@@ -34,18 +56,21 @@ class Contact extends Component{
                         <h3>Send me a message</h3>
                         <form>
                             First & Last Name: <span>*</span><br/>
-                            <input type="text"/ >
+                            <input type="text" value={this.state.name} onChange={this.handleChange}
+                            id="name" />
                             <br/>
                             Phone Number: <span>*</span><br/>
-                            <input type="text"/>
+                            <input type="text" value={this.state.number} onChange={this.handleChange}
+                            id="number"/>
                             <br/>
                             Email Address: <span>*</span><br/>
-                            <input type="email"/>
+                            <input type="email" value={this.state.email} onChange={this.handleChange}
+                            id="email"/>
                             <br/>
-                            Message: <span>*</span><br/>
-                            <textarea rows="4" cols="38" />
+                            Message:<br/>
+                            <textarea rows="4"/>
                             <br/>
-                            <button onClick={popup}>Send Message</button>
+                            <button onClick={this.handleForm} disabled={disable}>Send Message</button>
                         </form>
                     </div>
                 </div>

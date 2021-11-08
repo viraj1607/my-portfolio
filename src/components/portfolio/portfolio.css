@@ -19,44 +19,68 @@
   flex-wrap: wrap;
 }
 .portfolio-img-container .items {
+  background: transparent;
   height: 250px;
   margin: 10px 0;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  position: relative;
+}
+
+.portfolio-img-container .items:hover {
+  background: #fbf3e4;
+  transition: 0.5s;
+  border: 2px solid #105652;
+  box-sizing: border-box;
+}
+
+.portfolio-img-container h3 {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.portfolio-img-container .items:hover h3 {
+  opacity: 1;
+  bottom: 32%;
 }
 
 .portfolio-img-container .item1 {
   width: 400px;
-  background-image: url("../images/portfolio-img-1.png");
+  background-image: url(../images/portfolio-img-1.png);
 }
 
 .portfolio-img-container .item2 {
   width: 300px;
-  background-image: url("../images/portfolio-img-3.png");
+  background-image: url(../images/portfolio-img-3.png);
 }
 
 .portfolio-img-container .item3 {
   width: 500px;
-  background-image: url("../images/portfolio-img-2.png");
+  background-image: url(../images/portfolio-img-2.png);
 }
 
 .portfolio-img-container .item4 {
   width: 300px;
-  background-image: url("../images/portfolio-img-6.png");
+  background-image: url(../images/portfolio-img-6.png);
 }
 
 .portfolio-img-container .item5 {
   width: 500px;
-  background-image: url("../images/portfolio-img-4.png");
+  background-image: url(../images/portfolio-img-4.png);
 }
 
 .portfolio-img-container .item6 {
   width: 400px;
-  background-image: url("../images/portfolio-img-5.png");
+  background-image: url(../images/portfolio-img-5.jpeg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .portfolio-container {
     width: 100%;
   }
@@ -65,8 +89,13 @@
     width: 58%;
   }
 
+  .portfolio-img-container {
+    justify-content: center;
+  }
+
   .portfolio-img-container .items {
     width: 300px;
-    margin-left: 30px;
+    pointer-events: none;
+    margin: 10px;
   }
 }

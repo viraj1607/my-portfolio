@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Img from '../images/dev-img.png'
 import './home.css'
+import Resume from '../images/Resume.pdf'
 
 class Home extends Component{
     render(){
@@ -12,7 +13,7 @@ class Home extends Component{
                     <p>Get ready to turn ideas into reality</p>
                     <div className="flex-buttons">
                         <button className="btn btn1"><a href="#contact">Hire Me</a></button>
-                        <button className="btn btn2"><a href="../images/Resume.pdf" download>Get Resume</a></button>
+                        <button className="btn btn2"><a href={Resume} download>Get Resume</a></button>
                     </div>
                 </div>
                 <div className="img-home-container">

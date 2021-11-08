@@ -18,8 +18,8 @@ class About extends Component{
                 <div className="info-about-conatiner">
                     <h2>About Me</h2>
                     <div className="underline"/>
-                    <p>I'm a web designer and front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile and tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
-                    <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not pushing pixels, you'll find me cooking, gardening or working out in the park.</p>
+                    <p>I am an aspiring Full Stack Developer. I have an academic background in Computer Engineering. I have gained knowledge in Web Designing and Front End Development. Apart from it I have knowledge in Digital Marketing. I am seeking an opportunity where I can contribute the best through my skills. </p>
+                    <p>In my leisure time, you'll find me analyzing stocks, painting or reading.</p>
                     <div className="tech-logos">
                         <h5>Languages/Library/Technology</h5>
                         <div className="tech-logos-flex">

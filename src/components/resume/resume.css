@@ -49,7 +49,6 @@
   background-color: #fff;
   border-radius: 10px;
   font-size: 30px;
-  cursor: pointer;
 }
 
 .work-ex p,
@@ -66,7 +65,54 @@
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) {
+.work-ex,
+.education {
+  position: relative;
+}
+
+.work-ex .work-ex-info,
+.education .education-info {
+  margin-left: 18px;
+}
+
+.work-ex .work-ex-info .flex:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 100px;
+  z-index: 1;
+  width: 2px;
+  height: 40%;
+}
+
+.education .education-info .flex:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 100px;
+  z-index: 0;
+  width: 2px;
+  height: 70%;
+}
+
+.work-ex .work-ex-info h4:before,
+.education .education-info h4:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: -6.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
   .resume-main-container {
     width: 100%;
   }
@@ -103,7 +149,11 @@
     margin: 0 40px;
   }
 
-  /* .flex {
+  .flex {
     flex-direction: column;
-  } */
+  }
+
+  .align-items {
+    align-items: flex-start;
+  }
 }

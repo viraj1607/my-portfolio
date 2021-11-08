@@ -51,6 +51,15 @@
   margin: 5px 0;
 }
 
+.form-contact-container form textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  padding: 4px;
+  margin: 5px 0;
+}
+
 .form-contact-container form span {
   color: red;
 }
@@ -66,7 +75,11 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+.form-contact-container form button:disabled {
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 800px) {
   .contact-main-container {
     width: 100%;
   }
