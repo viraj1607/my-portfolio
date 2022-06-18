@@ -48,7 +48,7 @@ class Resume extends Component {
                     <h4>Citizen's School, Surat</h4>
                     <p>HSC</p>
                   </div>
-                  <span>2015 - 2016</span>
+                  <span>2014 - 2016</span>
                 </div>
               </div>
             </div>
