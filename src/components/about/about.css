@@ -66,6 +66,7 @@
 .tech-logos img {
   height: 50px;
   width: 50px;
+  margin: 10px 20px;
 }
 
 @media screen and (max-width: 800px) {

@@ -19,7 +19,7 @@ const Navbar=()=>{
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    </ul>   
                 </div>
                 <div className="menu-btn" onClick={()=>setShowNavLinks(!showNavLinks)}>
                    {showNavLinks?<HiOutlineX style={{position:"fixed"}}/>:<HiOutlineMenuAlt1/>}
