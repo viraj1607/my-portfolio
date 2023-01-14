@@ -28,7 +28,7 @@ class Resume extends Component {
                     <h4>Full Stack Developer - Full Time</h4>
                     <p>Melzo, Surat.</p>
                   </div>
-                  <span>Nov '21 - April '22</span>
+                  <span>Nov '21 - Present</span>
                 </div>
               </div>
             </div>

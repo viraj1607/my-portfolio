@@ -56,6 +56,10 @@
   color: #105652;
   font-weight: 500;
 }
+.nav-links ul li{
+  font-weight: 500;
+  color: #105652;
+}
 
 @media screen and (max-width: 800px) {
   .navbar span {

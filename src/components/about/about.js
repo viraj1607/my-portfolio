@@ -5,7 +5,7 @@ import ImgCss from "../images/css-logo.png";
 import ImgJs from "../images/js-logo.png";
 import ImgReact from "../images/react-logo.png";
 import ImgGh from "../images/github-logo.png";
-import ImgPy from "../images/python-logo.png";
+import ImgUn from "../images/unreal.png";
 import "./about.css";
 
 class About extends Component {
@@ -37,7 +37,7 @@ class About extends Component {
               <img src={ImgJs} alt="js-logo" />
               <img src={ImgReact} alt="react-logo" />
               <img src={ImgGh} alt="github-logo" />
-              <img src={ImgPy} alt="python-logo" />
+              <img src={ImgUn} alt="python-logo" />
               <img
                 src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
                 alt="mongodb-logo"
